@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+    html, body { margin: 0; padding: 0; height: 100%;}
+    #container{background-color: rgb(204, 203, 203); height: 100%;  
+        display: flex; justify-content: center; align-items: center;}
+    #loginSection {width: 300px; height: 200px; background-color: white; border: 1px solid black; }
+
+ a{color: black; text-decoration: none;}
+ a:hover{color: blueviolet;}
+ a:active{color: crimson;}
+ #id{height: 100%; display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; }
+    #a1{margin-bottom: 10px;}
+    #a3{padding-top: 25px; box-sizing: border-box;}
+</style>
+
+</head>
+<body>
+    <div id = "container">
+
+        <div id="loginSection">
+            <form action ="/login" method = "post" id="id">
+                <br>
+                <div id="a1"><input type="text" placeholder="user id"></div>
+                <div id ="a1"><input type="password" placeholder="user passwrd"></div>
+                <div id ="a1">
+                    <button type ="submit"value="login">login</button>
+                    <button type="reset">Reset</button>
+                </div>
+                <div  id="a3"><a href="divPage.html">go to divPage</a></div>
+            </form>
+          
+        </div>
+    </div>
+</body>
+</html>
