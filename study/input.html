@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인풋태그</title>
+</head>
+<body>
+    
+    <!-- * form 태그
+    => 입력양식 태그
+    => 사용자로부터 입력받은 데이터를 서버로 전송시키는 역할
+    => 모든 입력양식태그의 부모 역할
+    => 속성
+    - action : form태그의 필수 속성, 해당 링크로 폼안의 정보를 다른페이지로 넘어가게 함
+    - method : 정보가 넘어가는 방식 결정
+            POST(기본값) -> 정보를 넘길때 숨겨서 넘김 (로그인 형식, 개인정보 보호)
+            GET -> 정보를넘길때 URL에 표시 (검색 형식) -->
+
+    <!-- * input태그
+    =>사용자 입력 태그 (단독태그)
+    =>아이디, 비번, 회원가입, 설문조사 등 사용
+    =>css에서 클릭 이벤트 대신 활용
+    =>숨김메뉴 작업시 사용 -->
+
+    <form action="https://www.naver.com/" method="POST">
+
+        <!-- <input type="button" value="버튼"> -->
+        <button>버튼2</button>
+
+    </form>
+
+    <br><br>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle">동의합니다</label>
+    <!-- =>다수를 선택할때 사용
+    =>라벨태그는 연결되는 input과 위치에서의 제약이 없음
+    =>for를 이용하여 input태그와 연결할 수 있음 -->
+
+    <br><br>
+
+    <input type="radio" id="tab_1" name="tab">
+    <label for="tab_1">만족합니다</label>
+    <br>
+    <input type="radio" id="tab_2" name="tab">
+    <label for="tab_2">보통입니다</label>
+    <br>
+    <input type="radio" id="tab_3" name="tab">
+    <label for="tab_3">별로입니다</label>
+    <!-- =>한번 체크되면 해지할 수 없음
+    =>여러개의 radio버튼을 작성 후 name으로 그룹처리 가능
+    =>여러개 중에 하나만 체크할 수 있음 ex: 설문조사 단독선택 -->
+
+    <br><br>
+
+    <h5>본인 확인 이메일</h5>
+    <input type="email">
+    <!-- =>기본 텍스트 박스, 메일주소 작성 -->
+
+    <br><br>
+
+    전화번호 : <input type="tel">
+    <!-- =>전화번호 입력, email과 동일한텍스트 박스 형식 -->
+
+    <br><br>
+
+    <input type="text">
+    <!-- =>한줄의 기본 텍스트박스 -->
+
+    <br><br>
+
+    <input type="password">
+    <!-- =>비밀번호 작성, 글자는 숨겨짐 -->
+
+    <br><br>
+
+    <input type="search" value="여기에 적어주세요"> <button>검색</button>
+    <br>
+    <input type="search" placeholder="여기에 적어주세요"> <button>검색</button>
+    <!-- =>검색어 내용 입력
+    =>placeholder="내용" : 미리보기, 글자를 넣어둠 클릭할 때 사라짐
+    =>value="내용" : 미리설정된 값, 클릭해도 글자가 살아있음 -->
+
+    <br><br>
+
+    <input type="submit" value="제출하기">
+    <!-- =>서버로 form에 입력한 데이터를 보내주는 버튼
+    =>기본으로 제출이라고 나옴, value를 사용하면 넣은 내용으로 출력
+    =>로그인이나, 게시하기 버튼 등 사용 -->
+
+    <br><br>
+
+    <textarea cols="30" rows="10"></textarea>
+    <!-- =>여러줄의 텍스트박스
+    =>게시판
+    =>cols:행(가로 - 자)
+    =>rows:열(세로 - 줄) -->
+
+    <br><br>
+
+    <input type="time">
+    <!-- 시간 입력 -->
+
+    <br><br>
+
+    <input type="date">
+    <!-- 날짜 입력 -->
+
+    <br><br>
+
+    <select>
+        <option>선택해주세요</option>
+        <option>갈비</option>
+        <option>삼겹살</option>
+        <option>육회</option>
+        <option>소주</option>
+    </select>
+    <!-- =>옵션 선택창 -->
+
+</body>
+</html>
