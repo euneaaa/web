@@ -1,0 +1,111 @@
+* { margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+ul,li {
+    list-style: none; 
+}
+p {
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+a {
+    text-decoration: none; color: white; background-color: goldenrod;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+img {
+    display: block; border: 0;
+}
+body {
+    width: 100%;
+    height: 100%;    
+    background-color: white;
+}
+html { scroll-behavior: smooth; } 
+.wrap {
+    display: grid; 
+    grid-template-rows: auto 1fr 35px;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.hero {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(331px, 1fr));
+    grid-template-rows: minmax(200px, 1fr);
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 40px 10px; box-sizing: border-box;
+    color: white;
+}
+.hero h1 {
+    font-size: 50px;
+    justify-content: center;
+    margin-left: 35px;
+}
+.hero article {
+    margin: 0 35px;
+}
+.hero article p {
+    font-weight: 100;
+}
+ul {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(310px ,1fr)); 
+    grid-row: repeat(auto-fill,1fr);
+    grid-gap: 15px;
+    padding: 20px;
+    background-color:white;
+}
+li {
+    position: relative;
+    padding: 15px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+}
+figure {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-size: cover; background-repeat: no-repeat;
+    border-radius: 5px;
+}
+figcaption {
+    position: absolute; 
+    display: block;
+    padding: 35px 10px 35px 10px;
+    color: white;
+    bottom: 0; left: 0; width: 100%; height: auto;
+    background-color: rgba(10, 10, 10, 0.7);
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    border-radius: 5px;
+}
+.breweries a {
+    position: absolute;
+    bottom: 8px; left: 8px;
+}
+.breweries p {
+    margin-bottom: 60px;
+}
+footer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    bottom: 0px;
+    color: white;
+    background-color: rgb(39, 38, 38);
+  }
+footer p {
+    margin: 0;
+    font-size: 10px;
+}  
+
+
+
